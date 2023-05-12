@@ -5,10 +5,10 @@
 
 // container
 .container {
-  @apply mx-auto max-w-[1380px] px-3;
-  
+  @apply mx-auto max-w-[1240px] px-3;
+
   &-xl {
-    @apply max-w-[1440px] mx-auto px-3;
+    @apply max-w-[1240px] mx-auto px-3;
   }
 }
 
@@ -23,7 +23,7 @@
   li {
     @apply inline-block;
     a {
-      @apply block h-11 w-11 rounded-full border text-center hover:text-primary hover:border-primary transition-all duration-300;
+      @apply block h-11 w-11 rounded-full border text-center bg-primary hover:text-primary hover:bg-primary hover:border-primary transition-all duration-300;
 
       svg {
         @apply m-auto h-11;
@@ -84,15 +84,17 @@
 // form style
 .form-input,
 .form-textarea {
-  @apply border-primary  border border-transparent bg-theme-light rounded border-l-primary focus:border-primary focus:border focus:ring-transparent py-4;
+  background-color: #10233B;
+  @apply border-primary  border border-transparent rounded focus:border-primary focus:border focus:ring-transparent py-4;
 }
+
 
 // content style
 .content {
   @apply text-base;
   @apply prose max-w-none;
   @apply prose-headings:mt-[.5em] prose-headings:mb-[.9em] prose-headings:font-semibold prose-headings:text-dark;
-  @apply prose-h1:text-h1-sm md:prose-h1:text-h1;
+  @apply prose-h1:text-h1-sm md:prose-h1:text-base;
   @apply prose-h2:text-h2-sm md:prose-h2:text-h2;
   @apply prose-h3:text-h3-sm md:prose-h3:text-h3;
   @apply prose-hr:border-border ;
@@ -150,7 +152,7 @@
     @apply h-[calc(50%_+_160px)];
 
     &::before {
-      @apply h-[95%] bg-[0_50px] scale-100 bg-theme-light;
+      @apply h-[95%] bg-[0_50px] scale-100 bg-theme-dark;
       background-image: url("data:image/svg+xml,%0A%3Csvg width='1397' height='502' viewBox='0 0 1397 502' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 501C35.0836 398.787 165.889 212.869 424.439 286.903C747.628 379.445 887.776 260.891 943.636 155.844C999.496 50.796 1146.13 -47.2484 1396 29.2863' stroke='%23FFE4D1' stroke-opacity='0.85' stroke-width='4' stroke-dasharray='10 10'/%3E%3C/svg%3E%0A")
     }
 
@@ -169,7 +171,15 @@
      @apply w-full h-full
     }
   }
+  &-title{
+    color: white
+  }
+  &-description{
+    color: #828FA0;
+    opacity: 1;
+  }
 }
+
 
 //section-title
 .section-title {

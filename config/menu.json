@@ -9,23 +9,16 @@
       "url": "/about"
     },
     {
-      "name": "Blog",
-      "url": "/posts"
+      "name": "Services",
+      "url": "/services"
     },
     {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Terms & Conditions",
-          "url": "/terms-policy"
-        }
-      ]
+      "name": "Projects",
+      "url": "/projects"
+    },
+    {
+      "name": "Blog",
+      "url": "/posts"
     },
     {
       "name": "Contact",
@@ -34,16 +27,28 @@
   ],
   "footer": [
     {
+      "name": "Home",
+      "url": "/"
+    },
+    {
       "name": "About",
       "url": "/about"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Services",
+      "url": "/services"
     },
     {
-      "name": "Terms & Conditions",
-      "url": "/terms-policy"
+      "name": "Projects",
+      "url": "/projects"
+    },
+    {
+      "name": "Blog",
+      "url": "/posts"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
     }
   ]
 }

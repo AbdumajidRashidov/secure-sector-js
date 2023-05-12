@@ -1,9 +1,9 @@
 ---
 banner:
-  title: "Andromeda is the most intuitive </br> way to prototype Designs"
+  title: "Professional Security With Reliable Service"
   image: /images/banner-app.png
   link:
-    label: Get Premium Version
+    label: Learn more
     href: "#"
 
 ##brands

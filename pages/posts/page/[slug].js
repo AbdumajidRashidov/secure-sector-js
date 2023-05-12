@@ -24,7 +24,6 @@ const BlogPagination = ({
   const { frontmatter } = postIndex;
   const { title } = frontmatter;
   const postsRef = useRef(null);
-
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.to(postsRef.current, {
@@ -39,10 +38,20 @@ const BlogPagination = ({
   return (
     <Base title={title}>
       <section className="section pt-0">
-        <Banner title={title} />
+        {/* <Banner title={title} /> */}
+
         <div className="container">
+          <div className="row">
+            <div className="col-12 mt-20">
+              <h2 className="mb-10 text-center text-white">Our Blog</h2>
+              <p className="mx-auto mb-10 w-1/2 text-center text-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
+          </div>
           <div
-            className="row justify-center pt-20 pb-16 opacity-0"
+            className="row justify-center pb-16 pt-20 opacity-0"
             ref={postsRef}
           >
             {currentPosts.map((post, i) => (

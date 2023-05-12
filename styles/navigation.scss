@@ -3,9 +3,10 @@
   @apply h-[116px];
 }
 .header {
-  @apply fixed left-0 w-full  top-0 z-50 bg-white py-[29px] transition-all duration-500 ;
+  @apply fixed left-0 w-full  top-0 z-50  py-[29px] transition-all duration-500 ;
 
   &-sticky {
+    background-color: #00142C ;
     @apply py-[18px] shadow-[0_2px_8px_rgba(32,45,73,0.1)];
   }
 
@@ -20,7 +21,7 @@
 }
 
 .navbar-brand {
-  @apply text-xl font-semibold text-dark;
+  @apply text-xl;
   image {
     @apply max-h-full max-w-full;
   }
@@ -35,7 +36,7 @@
 }
 
 .nav-link {
-  @apply p-3 text-[1rem] font-medium text-dark transition hover:text-primary lg:py-4 xl:px-3;
+  @apply p-3 text-[1rem] font-medium transition hover:text-primary lg:py-4 xl:px-3;
 
   &.active {
     @apply text-primary;
@@ -56,7 +57,7 @@
 
 .nav-dropdown-link {
   @apply min-w-[150px] py-2.5 text-sm font-medium text-dark transition lg:hover:text-primary whitespace-nowrap lg:hover:bg-[#ffece4] px-4 rounded-lg;
-  
+
   &.active {
     @apply lg:bg-[#ffece4] text-primary;
   }

@@ -53,11 +53,11 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
                     </p>
                   </div>
                 </div>
-                <div className="content mt-16 mb-16 text-left">
+                <div className="content mb-16 mt-16 text-left">
                   <MDXRemote {...mdxContent} components={shortcodes} />
                 </div>
               </div>
-              {disqus.enable && (
+              {/* {disqus.enable && (
                 <div className="fade row justify-center opacity-0">
                   <div className="lg:col-8">
                     <DiscussionEmbed
@@ -66,7 +66,7 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
                     />
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           </article>
 

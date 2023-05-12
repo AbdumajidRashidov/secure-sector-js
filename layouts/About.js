@@ -1,4 +1,5 @@
 import { markdownify } from "@lib/utils/textConverter";
+import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Banner from "./components/Banner";
@@ -23,247 +24,139 @@ const About = ({ data }) => {
   return (
     <>
       <section className="section pt-0">
-        <Banner title={title} />
-        {/* About */}
-        <div className="section container">
-          <div className="row items-center justify-center">
-            <div className="animate md:col-6 lg:col-5 md:order-2">
-              <div className="about-image relative p-[60px]">
-                <ImageFallback
-                  className="animate relative w-full rounded-2xl"
-                  src={about_us.image}
-                  width={425}
-                  height={487}
-                  alt=""
-                />
-                <Circle
-                  className="top-4 left-4 z-[-1]"
-                  width={85}
-                  height={85}
-                />
-                <Circle
-                  width={37}
-                  height={37}
-                  fill={false}
-                  className="top-20 right-10 z-[-1]"
-                />
-                <Circle
-                  className="top-1/2 right-12 -z-[1]"
-                  width={24}
-                  height={24}
-                />
-                <Circle
-                  className="bottom-6 right-6 z-[-1]"
-                  width={85}
-                  height={85}
-                />
-                <Circle
-                  className="top-1/2 left-12 z-[-1]"
-                  width={20}
-                  height={20}
-                />
-                <Circle
-                  className="bottom-12 left-8 z-[1]"
-                  width={47}
-                  height={47}
-                  fill={false}
-                />
-              </div>
-            </div>
-            <div className="animate md:col-6 lg:col-4 md:order-1">
-              <p>{about_us.subtitle}</p>
-              {markdownify(about_us.title, "h2", "section-title bar-left mt-4")}
-              {markdownify(about_us.content, "p", "mt-10")}
-            </div>
-          </div>
+        <div className="mb-44 mt-32">
+          <h2 className="mb-5 text-center text-white">About Us</h2>
+          <p className="mx-auto w-1/2 text-center text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
-
-        {/* Works */}
-        <div className="section container">
-          <div className="animate text-center">
-            <p>{works.subtitle}</p>
-            {markdownify(works.title, "h2", "section-title mt-4")}
-            {markdownify(works.content, "p", "mt-10")}
-          </div>
-          <div className="row mt-10 justify-center">
-            {works.list.map((work, index) => (
-              <div key={"work-" + index} className="mt-10 md:col-6 lg:col-5">
-                <div className="animate text-center md:px-6 xl:px-12">
-                  {markdownify(work.title, "h3", "h4")}
-                  {markdownify(work.content, "p", "mt-2")}
+        <div className="mb-10">
+          <div className="container-xl">
+            <div className="row">
+              <div className="col-12 md:col-6 lg:col-4">
+                <div
+                  className="card card-body rounded-xl p-5"
+                  style={{ background: "#011936" }}
+                >
+                  <div className="flex items-center justify-start p-3">
+                    <FeatherIcon
+                      icon="lock"
+                      className="h-10 w-10 text-primary"
+                    />
+                    <h3 className="ml-4 text-xl text-white">Free Shipping</h3>
+                  </div>
+                  <div className="ml-4">
+                    <p className="mt-1 text-sm text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Mission */}
-        <div className="section container">
-          <div className="row items-center justify-center">
-            <div className="animate md:col-6 lg:col-5">
-              <div className="about-image relative p-[60px]">
-                <ImageFallback
-                  className="animate relative w-full rounded-2xl"
-                  src={mission.image}
-                  width={425}
-                  height={487}
-                  alt=""
-                />
-                <Circle
-                  className="top-4 left-4 z-[-1]"
-                  width={85}
-                  height={85}
-                />
-                <Circle
-                  width={37}
-                  height={37}
-                  fill={false}
-                  className="top-20 right-10 z-[-1]"
-                />
-                <Circle
-                  className="top-1/2 right-12 -z-[1]"
-                  width={24}
-                  height={24}
-                />
-                <Circle
-                  className="bottom-6 right-6 z-[-1]"
-                  width={85}
-                  height={85}
-                />
-                <Circle
-                  className="top-1/2 left-12 z-[-1]"
-                  width={20}
-                  height={20}
-                />
-                <Circle
-                  className="bottom-12 left-8 z-[1]"
-                  width={47}
-                  height={47}
-                  fill={false}
-                />
-              </div>
-            </div>
-            <div className="animate md:col-6 lg:col-4">
-              <p>{mission.subtitle}</p>
-              {markdownify(mission.title, "h2", "section-title bar-left mt-4")}
-              {markdownify(mission.content, "p", "mt-10")}
-            </div>
-          </div>
-        </div>
-
-        {/* Video */}
-        <div className="container-xl relative">
-          <div className="bg-theme absolute top-0 left-0 w-full">
-            <Circle
-              className="left-[7%] top-[21%]"
-              width={32}
-              height={32}
-              fill={false}
-            />
-            <Circle
-              className="left-[30%] top-[10%]"
-              width={20}
-              height={20}
-              fill={false}
-            />
-            <Circle
-              className="left-[4%] bottom-[35%]"
-              width={20}
-              height={20}
-              fill={false}
-            />
-            <Circle
-              className="left-[10%] bottom-[11%]"
-              width={37}
-              height={37}
-              fill={false}
-            />
-            <Circle
-              className="left-[44%] bottom-[48%]"
-              width={37}
-              height={37}
-              fill={false}
-            />
-            <Circle
-              className="left-[35%] bottom-[22%]"
-              width={20}
-              height={20}
-              fill={false}
-            />
-            <Circle
-              className="right-[32%] top-[2%]"
-              width={47}
-              height={47}
-              fill={false}
-            />
-          </div>
-          <div className="row items-center justify-center py-[90px]">
-            <div className="md:col-6 xl:col-4">
-              <div className="animate p-5">
-                <p>{video.subtitle}</p>
-                {markdownify(video.title, "h2", "mt-4 section-title bar-left")}
-                {markdownify(video.description, "p", "mt-10")}
-              </div>
-            </div>
-            <div className="md:col-6 xl:col-5">
-              <div className="px-4 ">
-                <VideoPopup
-                  id={video.video_id}
-                  thumbnail={video.thumbnail}
-                  width={540}
-                  height={585}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Clients */}
-        <div className="section container">
-          <div className="animate text-center">
-            <p>{clients.subtitle}</p>
-            {markdownify(clients.title, "h2", "section-title mt-4")}
-          </div>
-          <div className="animate from-right col-12 mt-16">
-            <Swiper
-              loop={true}
-              slidesPerView={3}
-              breakpoints={{
-                992: {
-                  slidesPerView: 5,
-                },
-              }}
-              spaceBetween={20}
-              modules={[Autoplay]}
-              autoplay={{ delay: 3000 }}
-            >
-              {clients.brands.map((brand, index) => (
-                <SwiperSlide
-                  className=" h-20 cursor-pointer py-6 px-6 grayscale  transition hover:grayscale-0 lg:px-10"
-                  key={"brand-" + index}
+              <div className="col-12 md:col-6 lg:col-4">
+                <div
+                  className="card card-body rounded-xl p-6"
+                  style={{ background: "#011936" }}
                 >
-                  <div className="relative h-full">
-                    <ImageFallback
-                      className="object-contain"
-                      src={brand}
-                      sizes="100vw"
-                      alt=""
-                      fill={true}
-                      priority={true}
+                  <div className="flex items-center justify-start p-3">
+                    <FeatherIcon
+                      icon="lock"
+                      className="h-10 w-10 text-primary"
                     />
+                    <h3 className="ml-4 text-xl text-white">Free Shipping</h3>
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                  <div className="ml-4">
+                    <p className="mt-1 text-sm text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 md:col-6 lg:col-4">
+                <div
+                  className="card card-body rounded-xl p-5"
+                  style={{ background: "#011936" }}
+                >
+                  <div className="flex items-center justify-start p-3">
+                    <FeatherIcon
+                      icon="lock"
+                      className="h-10 w-10 text-primary"
+                    />
+                    <h3 className="ml-4 text-xl text-white">Free Shipping</h3>
+                  </div>
+                  <div className="ml-4">
+                    <p className="mt-1 text-sm text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="container-xl">
+            <div
+              className="bg-theme_lighter rounded-2xl p-10"
+              style={{ background: "#011936" }}
+            >
+              <div className="row m-0 p-0">
+                <div className="col-12 flex flex-col items-center justify-center lg:col-3">
+                  <FeatherIcon
+                    icon="globe"
+                    className="h-10 w-10 text-primary"
+                  />
+                  <h3 className="mt-2 text-center text-white">
+                    3,452 <span className="text-primary">+</span>
+                  </h3>
+                  <p className="mt-2">Cybersecurity Projects</p>
+                </div>
+                <div className="col-12 flex flex-col items-center justify-center lg:col-3">
+                  <FeatherIcon
+                    icon="globe"
+                    className="h-10 w-10 text-primary"
+                  />
+                  <h3 className="mt-2 text-center text-white">
+                    3,452 <span className="text-primary">+</span>
+                  </h3>
+                  <p className="mt-2">Cybersecurity Projects</p>
+                </div>
+                <div className="col-12 flex flex-col items-center justify-center lg:col-3">
+                  <FeatherIcon
+                    icon="globe"
+                    className="h-10 w-10 text-primary"
+                  />
+                  <h3 className="mt-2 text-center text-white">
+                    3,452 <span className="text-primary">+</span>
+                  </h3>
+                  <p className="mt-2">Cybersecurity Projects</p>
+                </div>
+                <div className="col-12 flex flex-col items-center justify-center lg:col-3">
+                  <FeatherIcon
+                    icon="globe"
+                    className="h-10 w-10 text-primary"
+                  />
+                  <h3 className="mt-2 text-center text-white">
+                    3,452 <span className="text-primary">+</span>
+                  </h3>
+                  <p className="mt-2">Cybersecurity Projects</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Members */}
         <div className="section container">
           <div className="animate text-center">
-            <p>{our_member.subtitle}</p>
-            {markdownify(our_member.title, "h2", "section-title mt-4")}
-            {markdownify(our_member.content, "p", "mt-16")}
+            <p className="mb-5 text-2xl text-primary">Our Team</p>
+            <h2 className="mb-10 text-white">Meet With Our Expert</h2>
           </div>
           <div className="row justify-center">
             <div className="lg:col-10">
@@ -290,7 +183,7 @@ const About = ({ data }) => {
         </div>
 
         {/* Office */}
-        <div className="section container">
+        {/* <div className="section container">
           <div className="animate text-center">
             <p>{our_office.subtitle}</p>
             {markdownify(our_office.title, "h2", "section-title mt-4")}
@@ -320,7 +213,7 @@ const About = ({ data }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <Cta />
     </>
