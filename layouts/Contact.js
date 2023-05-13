@@ -1,4 +1,5 @@
 import config from "@config/config.json";
+import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
 
@@ -10,203 +11,83 @@ const Contact = ({ data }) => {
     <section className="section">
       {/* <Banner title={title} /> */}
       <div className="container">
-        <div className="section row items-center justify-center">
+        <div className="section row  justify-center">
           <div className="animate lg:col-6">
-            <div class="">
-              <div class="elementor-widget-wrap elementor-element-populated">
-                <div
-                  class="elementor-element elementor-element-bc3970f elementor-widget elementor-widget-heading"
-                  data-id="bc3970f"
-                  data-element_type="widget"
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h5 class="elementor-heading-title elementor-size-default">
+            <div className="mb-10">
+                    <h5 class="text-primary mb-5">
                       Contact Us
-                    </h5>{" "}
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-5373d7d elementor-widget elementor-widget-heading"
-                  data-id="5373d7d"
-                  data-element_type="widget"
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">
+                    </h5>
+
+                    <h3 class="text-white mb-5">
                       Get In Touch
-                    </h2>{" "}
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-ec249d2 elementor-widget elementor-widget-text-editor"
-                  data-id="ec249d2"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
+                    </h3>
+
+                  <div class="text-gray-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua Ut enim ad minim veniam, quis nostrud exercitation{" "}
                   </div>
+            </div>
+            <div className="mb-10 row">
+              <div className="col-12 lg:col-6">
+                <div className="card flex mb-4">
+                  <div className="p-3 rounded-xl w-16 h-16 flex items-center mr-5 justify-center" style={{background:"#10233B"}} >
+                  <FeatherIcon
+                    icon="home"
+                    className="card-icon w-8 h-8  m-0 p-0 text-primary"
+                  />
+                  </div>
+
+                  <div>
+                    <h4 className="text-white">Ubud</h4>
+                    <p className="text-gray-500">Jl. Raya Ubud No.88, Bali - 80571</p>
+                  </div>
                 </div>
-                <section
-                  class="elementor-section elementor-inner-section elementor-element elementor-element-633d4f9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                  data-id="633d4f9"
-                  data-element_type="section"
-                >
-                  <div class="elementor-container elementor-column-gap-no">
-                    <div
-                      class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0799188"
-                      data-id="0799188"
-                      data-element_type="column"
-                    >
-                      <div class="elementor-widget-wrap elementor-element-populated">
-                        <div
-                          class="elementor-element elementor-element-19a22a1 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-                          data-id="19a22a1"
-                          data-element_type="widget"
-                          data-widget_type="jkit_icon_box.default"
-                        >
-                          <div class="elementor-widget-container">
-                            <div class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_733_1_645e137a531b4">
-                              <div class="jkit-icon-box-wrapper hover-from-left">
-                                <div class="icon-box icon-box-header elementor-animation-">
-                                  <div class="icon style-color">
-                                    <i
-                                      aria-hidden="true"
-                                      class="jki jki-home-line"
-                                    ></i>
-                                  </div>
-                                </div>
-                                <div class="icon-box icon-box-body">
-                                  <h4 class="title">Ubud</h4>
-                                  <p class="icon-box-description">
-                                    Jl. Raya Ubud No.88, Bali - 80571
-                                  </p>
-                                </div>
-                              </div>
-                            </div>{" "}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9233252"
-                      data-id="9233252"
-                      data-element_type="column"
-                    >
-                      <div class="elementor-widget-wrap elementor-element-populated">
-                        <div
-                          class="elementor-element elementor-element-de0eeb6 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-                          data-id="de0eeb6"
-                          data-element_type="widget"
-                          data-widget_type="jkit_icon_box.default"
-                        >
-                          <div class="elementor-widget-container">
-                            <div class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_733_2_645e137a5d135">
-                              <div class="jkit-icon-box-wrapper hover-from-left">
-                                <div class="icon-box icon-box-header elementor-animation-">
-                                  <div class="icon style-color">
-                                    <i
-                                      aria-hidden="true"
-                                      class="jki jki-home-line"
-                                    ></i>
-                                  </div>
-                                </div>
-                                <div class="icon-box icon-box-body">
-                                  <h4 class="title">Denpasar</h4>
-                                  <p class="icon-box-description">
-                                    Jl. Niti Mandala, Renon, Bali – 80225
-                                    <br />
-                                  </p>
-                                </div>
-                              </div>
-                            </div>{" "}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              </div>
+              <div className="col-12 lg:col-6">
+                <div className="card flex mb-4">
+                  <div className="p-3 rounded-xl w-16 h-16 flex items-center mr-5 justify-center" style={{background:"#10233B"}} >
+                  <FeatherIcon
+                    icon="home"
+                    className="card-icon w-8 h-8  m-0 p-0 text-primary"
+                  />
                   </div>
-                </section>
-                <section
-                  class="elementor-section elementor-inner-section elementor-element elementor-element-8c8a770 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                  data-id="8c8a770"
-                  data-element_type="section"
-                >
-                  <div class="elementor-container elementor-column-gap-no">
-                    <div
-                      class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-cd45748"
-                      data-id="cd45748"
-                      data-element_type="column"
-                    >
-                      <div class="elementor-widget-wrap elementor-element-populated">
-                        <div
-                          class="elementor-element elementor-element-de70fd3 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-                          data-id="de70fd3"
-                          data-element_type="widget"
-                          data-widget_type="jkit_icon_box.default"
-                        >
-                          <div class="elementor-widget-container">
-                            <div class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_733_3_645e137a61d42">
-                              <div class="jkit-icon-box-wrapper hover-from-left">
-                                <div class="icon-box icon-box-header elementor-animation-">
-                                  <div class="icon style-color">
-                                    <i
-                                      aria-hidden="true"
-                                      class="jki jki-phone-call-line"
-                                    ></i>
-                                  </div>
-                                </div>
-                                <div class="icon-box icon-box-body">
-                                  <h4 class="title">Call Us</h4>
-                                  <p class="icon-box-description">
-                                    (+62)81 234 998 112
-                                  </p>
-                                </div>
-                              </div>
-                            </div>{" "}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-09e36c3"
-                      data-id="09e36c3"
-                      data-element_type="column"
-                    >
-                      <div class="elementor-widget-wrap elementor-element-populated">
-                        <div
-                          class="elementor-element elementor-element-7fcc955 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-                          data-id="7fcc955"
-                          data-element_type="widget"
-                          data-widget_type="jkit_icon_box.default"
-                        >
-                          <div class="elementor-widget-container">
-                            <div class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_733_4_645e137a65f5a">
-                              <div class="jkit-icon-box-wrapper hover-from-left">
-                                <div class="icon-box icon-box-header elementor-animation-">
-                                  <div class="icon style-color">
-                                    <i
-                                      aria-hidden="true"
-                                      class="jki jki-envelope"
-                                    ></i>
-                                  </div>
-                                </div>
-                                <div class="icon-box icon-box-body">
-                                  <h4 class="title">Email Address</h4>
-                                  <p class="icon-box-description">
-                                    support@domain.com
-                                  </p>
-                                </div>
-                              </div>
-                            </div>{" "}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
+                  <div>
+                    <h4 className="text-white">Denpasar</h4>
+                    <p className="text-gray-500">Jl. Niti Mandala, Renon, Bali – 80225</p>
                   </div>
-                </section>
+                </div>
+              </div>
+              <div className="col-12 lg:col-6">
+                <div className="card flex mb-4">
+                  <div className="p-3 rounded-xl w-16 h-16 flex items-center mr-5 justify-center" style={{background:"#10233B"}} >
+                  <FeatherIcon
+                    icon="phone"
+                    className="card-icon w-8 h-8  m-0 p-0 text-primary"
+                  />
+                  </div>
+
+                  <div>
+                    <h4 className="text-white">Call Us</h4>
+                    <p className="text-gray-500">(+62)81 234 998 112</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 lg:col-6">
+                <div className="card flex mb-4">
+                  <div className="p-3 rounded-xl w-16 h-16 flex items-center mr-5 justify-center" style={{background:"#10233B"}} >
+                  <FeatherIcon
+                    icon="mail"
+                    className="card-icon w-8 h-8  m-0 p-0 text-primary"
+                  />
+                  </div>
+
+                  <div>
+                    <h4 className="text-white">Email Address</h4>
+                    <p className="text-gray-500">support@domain.com</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
