@@ -14,58 +14,67 @@ const Contact = ({ data }) => {
         <div className="section row  justify-center">
           <div className="animate lg:col-6">
             <div className="mb-10">
-                    <h5 class="text-primary mb-5">
-                      Contact Us
-                    </h5>
+              <h5 class="mb-5 text-primary">Contact Us</h5>
 
-                    <h3 class="text-white mb-5">
-                      Get In Touch
-                    </h3>
+              <h3 class="mb-5 text-white">Get In Touch</h3>
 
-                  <div class="text-gray-500">
+              {/* <div class="text-gray-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua Ut enim ad minim veniam, quis nostrud exercitation{" "}
-                  </div>
+                  </div> */}
             </div>
-            <div className="mb-10 row">
+            <div className="row mb-10">
               <div className="col-12 lg:col-6">
-                <div className="card flex mb-4">
-                  <div className="p-3 rounded-xl w-16 h-16 flex items-center mr-5 justify-center" style={{background:"#10233B"}} >
-                  <FeatherIcon
-                    icon="home"
-                    className="card-icon w-8 h-8  m-0 p-0 text-primary"
-                  />
+                <div className="card mb-4 flex">
+                  <div
+                    className="mr-5 flex h-16 w-16 items-center justify-center rounded-xl p-3"
+                    style={{ background: "#10233B" }}
+                  >
+                    <FeatherIcon
+                      icon="home"
+                      className="card-icon m-0 h-8  w-8 p-0 text-primary"
+                    />
                   </div>
 
                   <div>
-                    <h4 className="text-white">Ubud</h4>
-                    <p className="text-gray-500">Jl. Raya Ubud No.88, Bali - 80571</p>
+                    <h4 className="text-white">Location</h4>
+                    <p className="text-gray-500">
+                      64A, Labzak street, Tashkent
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="col-12 lg:col-6">
-                <div className="card flex mb-4">
-                  <div className="p-3 rounded-xl w-16 h-16 flex items-center mr-5 justify-center" style={{background:"#10233B"}} >
-                  <FeatherIcon
-                    icon="home"
-                    className="card-icon w-8 h-8  m-0 p-0 text-primary"
-                  />
+              {/* <div className="col-12 lg:col-6">
+                <div className="card mb-4 flex">
+                  <div
+                    className="mr-5 flex h-16 w-16 items-center justify-center rounded-xl p-3"
+                    style={{ background: "#10233B" }}
+                  >
+                    <FeatherIcon
+                      icon="home"
+                      className="card-icon m-0 h-8  w-8 p-0 text-primary"
+                    />
                   </div>
 
                   <div>
                     <h4 className="text-white">Denpasar</h4>
-                    <p className="text-gray-500">Jl. Niti Mandala, Renon, Bali – 80225</p>
+                    <p className="text-gray-500">
+                      Jl. Niti Mandala, Renon, Bali – 80225
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="col-12 lg:col-6">
-                <div className="card flex mb-4">
-                  <div className="p-3 rounded-xl w-16 h-16 flex items-center mr-5 justify-center" style={{background:"#10233B"}} >
-                  <FeatherIcon
-                    icon="phone"
-                    className="card-icon w-8 h-8  m-0 p-0 text-primary"
-                  />
+                <div className="card mb-4 flex">
+                  <div
+                    className="mr-5 flex h-16 w-16 items-center justify-center rounded-xl p-3"
+                    style={{ background: "#10233B" }}
+                  >
+                    <FeatherIcon
+                      icon="phone"
+                      className="card-icon m-0 h-8  w-8 p-0 text-primary"
+                    />
                   </div>
 
                   <div>
@@ -73,19 +82,22 @@ const Contact = ({ data }) => {
                     <p className="text-gray-500">(+62)81 234 998 112</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-12 lg:col-6">
-                <div className="card flex mb-4">
-                  <div className="p-3 rounded-xl w-16 h-16 flex items-center mr-5 justify-center" style={{background:"#10233B"}} >
-                  <FeatherIcon
-                    icon="mail"
-                    className="card-icon w-8 h-8  m-0 p-0 text-primary"
-                  />
+                <div className="card mb-4 flex">
+                  <div
+                    className="mr-5 flex h-16 w-16 items-center justify-center rounded-xl p-3"
+                    style={{ background: "#10233B" }}
+                  >
+                    <FeatherIcon
+                      icon="mail"
+                      className="card-icon m-0 h-8  w-8 p-0 text-primary"
+                    />
                   </div>
 
                   <div>
                     <h4 className="text-white">Email Address</h4>
-                    <p className="text-gray-500">support@domain.com</p>
+                    <p className="text-gray-500">info@securesector.uz</p>
                   </div>
                 </div>
               </div>
@@ -156,9 +168,9 @@ const Contact = ({ data }) => {
               </button>
             </form>
           </div>
-          <div>
+          <div className="mt-10">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95914.39841324482!2d69.15485812161273!3d41.301794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b5aaf115b69%3A0x2fdc39f07f9f6c8e!2zSVQt0L_QsNGA0Log0LjQvdC90L7QstCw0YbQuNC5INCyINC60LjQsdC10YDQvdC10YLQuNC60LU!5e0!3m2!1sru!2s!4v1683883424327!5m2!1sru!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.9410415362195!2d69.26120797598983!3d41.33189539943541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b7ec64d4dbd%3A0x6a26177af9d218c3!2sC-Space%20Labzak!5e0!3m2!1sru!2s!4v1684857904546!5m2!1sru!2s"
               width="100%"
               height="500"
               style={{ border: 0 }}

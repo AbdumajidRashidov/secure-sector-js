@@ -11,10 +11,13 @@ import { markdownify } from "@lib/utils/textConverter";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { TbQuote } from "react-icons/tb";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import imgUrl from "../public/images/blog/01.jpg";
+import kids from "../public/images/kids.png";
+import staff from "../public/images/staff.png";
+import dlp from "../public/images/dlp.jpeg";
+
 const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
   const paginationRef = useRef(null);
   const testimonialPaginationRef = useRef(null);
@@ -118,10 +121,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     "mb-8 banner-title opacity-0"
                   )}
                   <p className="banner-description mb-8 opacity-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod enim tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip
+                    Secure Sector for comprehensive data protection solutions.
+                    Safeguard your sensitive information from unauthorized
+                    access, breaches, and data loss. Our secure and reliable
+                    solutions ensure the confidentiality and integrity of your
+                    data, giving you peace of mind. Discover our cutting-edge
+                    technologies and industry-leading expertise today.
                   </p>
                   <div className="banner-btn">
                     <Link className="btn btn-primary" href={banner.link.href}>
@@ -154,14 +159,14 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
               >
                 <div className="flex items-center justify-start p-3">
                   <FeatherIcon icon="lock" className="h-10 w-10 text-primary" />
-                  <h3 className="ml-4 text-xl text-white">Free Shipping</h3>
+                  <h3 className="ml-4 text-xl text-white">Security services</h3>
                 </div>
                 <div className="ml-4">
-                  <p className="mt-1 text-sm text-gray-500">
+                  {/* <p className="mt-1 text-sm text-gray-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -171,15 +176,18 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                 style={{ background: "#011936" }}
               >
                 <div className="flex items-center justify-start p-3">
-                  <FeatherIcon icon="lock" className="h-10 w-10 text-primary" />
-                  <h3 className="ml-4 text-xl text-white">Free Shipping</h3>
+                  <FeatherIcon
+                    icon="file-text"
+                    className="h-10 w-10 text-primary"
+                  />
+                  <h3 className="ml-4 text-xl text-white">Data Privacy</h3>
                 </div>
                 <div className="ml-4">
-                  <p className="mt-1 text-sm text-gray-500">
+                  {/* <p className="mt-1 text-sm text-gray-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -189,15 +197,17 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                 style={{ background: "#011936" }}
               >
                 <div className="flex items-center justify-start p-3">
-                  <FeatherIcon icon="lock" className="h-10 w-10 text-primary" />
-                  <h3 className="ml-4 text-xl text-white">Free Shipping</h3>
+                  <FeatherIcon icon="save" className="h-10 w-10 text-primary" />
+                  <h3 className="ml-4 text-xl text-white">
+                    Industry Certified
+                  </h3>
                 </div>
                 <div className="ml-4">
-                  <p className="mt-1 text-sm text-gray-500">
+                  {/* <p className="mt-1 text-sm text-gray-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -308,11 +318,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   className="mb-4 h-16 w-16 text-primary"
                 />
                 <h3 className="mb-3 text-center text-xl text-white">
-                  Network Security
+                  Data Encryption
                 </h3>
                 <p className="mb-6 text-center text-sm text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore
+                  Protect your sensitive data by encrypting it, ensuring that
+                  only authorized individuals can access and decipher the
+                  information.
                 </p>
                 <Link
                   href={"#"}
@@ -336,11 +347,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   className="mb-4 h-16 w-16 text-primary"
                 />
                 <h3 className="mb-3 text-center text-xl text-white">
-                  Database Security
+                  Vulnerability Assessments
                 </h3>
                 <p className="mb-6 text-center text-sm text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore
+                  Identify and address security vulnerabilities in your systems
+                  and networks through comprehensive assessments and simulated
+                  attacks to enhance overall security posture.
                 </p>
                 <Link
                   href={"#"}
@@ -364,11 +376,13 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   className="mb-4 h-16 w-16 text-primary"
                 />
                 <h3 className="mb-3 text-center text-xl text-white">
-                  Web Security
+                  Access Control
                 </h3>
                 <p className="mb-6 text-center text-sm text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore
+                  Implement robust access control mechanisms to restrict
+                  unauthorized access to your data, including user
+                  authentication, role-based access control, and multi-factor
+                  authentication.
                 </p>
                 <Link
                   href={"#"}
@@ -392,11 +406,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   className="mb-4 h-16 w-16 text-primary"
                 />
                 <h3 className="mb-3 text-center text-xl text-white">
-                  Locker Security
+                  Security Incident Response
                 </h3>
                 <p className="mb-6 text-center text-sm text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore
+                  Develop and implement incident response plans to effectively
+                  detect, mitigate, and respond to security incidents,
+                  minimizing their impact and preventing further damage.
                 </p>
                 <Link
                   href={"#"}
@@ -420,11 +435,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   className="mb-4 h-16 w-16 text-primary"
                 />
                 <h3 className="mb-3 text-center text-xl text-white">
-                  Data Security
+                  Security Awareness Training
                 </h3>
                 <p className="mb-6 text-center text-sm text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore
+                  Educate your employees about data security best practices,
+                  raising their awareness of potential threats and equipping
+                  them with the knowledge to handle sensitive data securely.
                 </p>
                 <Link
                   href={"#"}
@@ -448,11 +464,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   className="mb-4 h-16 w-16 text-primary"
                 />
                 <h3 className="mb-3 text-center text-xl text-white">
-                  Cloud Security
+                  Data Loss Prevention (DLP)
                 </h3>
                 <p className="mb-6 text-center text-sm text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore
+                  Deploy DLP solutions to monitor and prevent unauthorized
+                  transmission, leakage, or loss of sensitive data, both within
+                  your organization and through external channels.
                 </p>
                 <Link
                   href={"#"}
@@ -469,77 +486,97 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="container">
-          <div className="row items-center justify-center">
-            <div className="col-12">
-              <p className="mb-2 text-center text-xl text-primary">
-                Our Products
-              </p>
-              <h3 className="mb-10 text-center text-white">
-                You can imporve your business with our products
-              </h3>
+      <section className="section pt-0">
+        <section className="section">
+          <div className="container">
+            <div className="row items-center justify-center">
+              <div className="col-12">
+                <p className="mb-2 text-center text-xl text-primary">
+                  Our Products
+                </p>
+                <h3 className="mb-10 text-center text-white">
+                  You can imporve your business with our products
+                </h3>
+              </div>
+              <div className="animate mb-10 lg:col-6 lg:order-2">
+                <ImageFallback
+                  className="mx-auto rounded-2xl"
+                  src={dlp}
+                  width={575}
+                  height={511}
+                  alt="primary speciality"
+                />
+              </div>
+              <div className="animate mb-10 lg:col-5 lg:order-1">
+                <h2 className="section-title bar-left mt-4 text-white">
+                  Sector DLP
+                </h2>
+                <p className="mt-10 text-gray-500">
+                  Sector DLP aims to protect sensitive data from unauthorized
+                  access, leakage, or loss within an organization. It involves
+                  implementing technology solutions, policies, and procedures to
+                  prevent data breaches and ensure compliance with data
+                  protection regulations. By monitoring and controlling data
+                  flow across networks, endpoints, and storage systems, a DLP
+                  project helps organizations identify and prevent data
+                  exfiltration, accidental data loss, and insider threats. The
+                  project typically includes risk assessments, policy
+                  development, deployment of DLP tools, user training, and
+                  ongoing monitoring and refinement to maintain a strong defense
+                  against data loss incidents.
+                </p>
+              </div>
             </div>
-            <div className="animate lg:col-6 lg:order-2">
-              <ImageFallback
-                className="mx-auto"
-                src={speciality.primary.image}
-                width={575}
-                height={511}
-                alt="primary speciality"
-              />
+            <div className="row mb-10 items-center">
+              <div className="animate lg:col-6">
+                <ImageFallback
+                  className="mx-auto rounded-2xl"
+                  src={kids}
+                  width={575}
+                  height={511}
+                  alt="secondary speciality"
+                />
+              </div>
+              <div className="animate lg:col-5">
+                <h2 className="section-title bar-left mt-4 text-white">
+                  Sector Kids
+                </h2>
+                <p className="mt-10 text-gray-500">
+                  Sector kids - is a software tool designed to help parents
+                  monitor and manage their children`s online activities across
+                  various devices and platforms. It provides features and
+                  functionalities that allow parents to enforce age-appropriate
+                  restrictions, promote healthy digital habits, and ensure the
+                  online safety of their children.
+                </p>
+              </div>
             </div>
-            <div className="animate lg:col-5 lg:order-1">
-              <p>{speciality.primary.subtitle}</p>
-              {markdownify(
-                speciality.primary.title,
-                "h2",
-                "mt-4 section-title bar-left"
-              )}
-              {markdownify(speciality.primary.description, "p", "mt-10")}
+            <div className="row mb-10 items-center">
+              <div className="animate lg:col-5">
+                <h2 className="section-title bar-left mt-4 text-white">
+                  Sector staff monitoring
+                </h2>
+                <p className="mt-10 text-gray-500">
+                  The platform is a software solution designed to track and
+                  monitor the activities and performance of employees within an
+                  organization. It provides tools and functionalities that allow
+                  employers to oversee employee productivity, ensure compliance
+                  with company policies, and improve overall workforce
+                  management.
+                </p>
+              </div>
+              <div className="animate lg:col-6">
+                <ImageFallback
+                  className="mx-auto rounded-2xl"
+                  src={staff}
+                  width={575}
+                  height={511}
+                  alt="secondary speciality"
+                />
+              </div>
             </div>
           </div>
-          <div className="row items-center">
-            <div className="animate lg:col-6">
-              <ImageFallback
-                className="mx-auto"
-                src={speciality.secondary.image}
-                width={575}
-                height={511}
-                alt="secondary speciality"
-              />
-            </div>
-            <div className="animate lg:col-5">
-              <p>{speciality.secondary.subtitle}</p>
-              {markdownify(
-                speciality.secondary.title,
-                "h2",
-                "mt-4 section-title bar-left"
-              )}
-              {markdownify(speciality.secondary.description, "p", "mt-10")}
-            </div>
-          </div>
-          <div className="row items-center">
-            <div className="animate lg:col-5">
-              <p>{speciality.secondary.subtitle}</p>
-              {markdownify(
-                speciality.secondary.title,
-                "h2",
-                "mt-4 section-title bar-left"
-              )}
-              {markdownify(speciality.secondary.description, "p", "mt-10")}
-            </div>
-            <div className="animate lg:col-6">
-              <ImageFallback
-                className="mx-auto"
-                src={speciality.secondary.image}
-                width={575}
-                height={511}
-                alt="secondary speciality"
-              />
-            </div>
-          </div>
-        </div>
+        </section>
       </section>
       <section className="section">
         <div className="container-xl">

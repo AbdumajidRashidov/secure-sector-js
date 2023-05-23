@@ -15,12 +15,6 @@ const Services = ({ data }) => {
         <section className="section">
           <div className="container-xl">
             <div className="row">
-              {/* <div className="col-12">
-                <p className="mb-2 text-center text-xl text-primary">
-                  Our Services
-                </p>
-                <h1 className="mb-10 text-center text-white">What We Offer</h1>
-              </div> */}
               <div className="col-12 mb-6 md:col-6 lg:col-4">
                 <div
                   className="card card-body flex flex-col items-center justify-center rounded-xl px-14 py-10"
@@ -31,11 +25,12 @@ const Services = ({ data }) => {
                     className="mb-4 h-16 w-16 text-primary"
                   />
                   <h3 className="mb-3 text-center text-xl text-white">
-                    Network Security
+                    Data Encryption
                   </h3>
                   <p className="mb-6 text-center text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore
+                    Protect your sensitive data by encrypting it, ensuring that
+                    only authorized individuals can access and decipher the
+                    information.
                   </p>
                   <Link
                     href={"#"}
@@ -59,11 +54,12 @@ const Services = ({ data }) => {
                     className="mb-4 h-16 w-16 text-primary"
                   />
                   <h3 className="mb-3 text-center text-xl text-white">
-                    Database Security
+                    Vulnerability Assessments
                   </h3>
                   <p className="mb-6 text-center text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore
+                    Identify and address security vulnerabilities in your
+                    systems and networks through comprehensive assessments and
+                    simulated attacks to enhance overall security posture.
                   </p>
                   <Link
                     href={"#"}
@@ -87,11 +83,13 @@ const Services = ({ data }) => {
                     className="mb-4 h-16 w-16 text-primary"
                   />
                   <h3 className="mb-3 text-center text-xl text-white">
-                    Web Security
+                    Access Control
                   </h3>
                   <p className="mb-6 text-center text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore
+                    Implement robust access control mechanisms to restrict
+                    unauthorized access to your data, including user
+                    authentication, role-based access control, and multi-factor
+                    authentication.
                   </p>
                   <Link
                     href={"#"}
@@ -115,11 +113,12 @@ const Services = ({ data }) => {
                     className="mb-4 h-16 w-16 text-primary"
                   />
                   <h3 className="mb-3 text-center text-xl text-white">
-                    Locker Security
+                    Security Incident Response
                   </h3>
                   <p className="mb-6 text-center text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore
+                    Develop and implement incident response plans to effectively
+                    detect, mitigate, and respond to security incidents,
+                    minimizing their impact and preventing further damage.
                   </p>
                   <Link
                     href={"#"}
@@ -143,11 +142,12 @@ const Services = ({ data }) => {
                     className="mb-4 h-16 w-16 text-primary"
                   />
                   <h3 className="mb-3 text-center text-xl text-white">
-                    Data Security
+                    Security Awareness Training
                   </h3>
                   <p className="mb-6 text-center text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore
+                    Educate your employees about data security best practices,
+                    raising their awareness of potential threats and equipping
+                    them with the knowledge to handle sensitive data securely.
                   </p>
                   <Link
                     href={"#"}
@@ -171,11 +171,12 @@ const Services = ({ data }) => {
                     className="mb-4 h-16 w-16 text-primary"
                   />
                   <h3 className="mb-3 text-center text-xl text-white">
-                    Cloud Security
+                    Data Loss Prevention (DLP)
                   </h3>
                   <p className="mb-6 text-center text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore
+                    Deploy DLP solutions to monitor and prevent unauthorized
+                    transmission, leakage, or loss of sensitive data, both
+                    within your organization and through external channels.
                   </p>
                   <Link
                     href={"#"}

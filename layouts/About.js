@@ -24,11 +24,15 @@ const About = ({ data }) => {
   return (
     <>
       <section className="section pt-0">
-        <div className="mb-44 mt-32">
+        <div className="mb-28 mt-32">
           <h2 className="mb-5 text-center text-white">About Us</h2>
           <p className="mx-auto w-1/2 text-center text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Trust Secure Sector for comprehensive data protection solutions.
+            Safeguard your sensitive information from unauthorized access,
+            breaches, and data loss. Our secure and reliable solutions ensure
+            the confidentiality and integrity of your data, giving you peace of
+            mind. Discover our cutting-edge technologies and industry-leading
+            expertise today.
           </p>
         </div>
         <div className="mb-10">
@@ -44,14 +48,16 @@ const About = ({ data }) => {
                       icon="lock"
                       className="h-10 w-10 text-primary"
                     />
-                    <h3 className="ml-4 text-xl text-white">Free Shipping</h3>
+                    <h3 className="ml-4 text-xl text-white">
+                      Security services
+                    </h3>
                   </div>
                   <div className="ml-4">
-                    <p className="mt-1 text-sm text-gray-500">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
+                    {/* <p className="mt-1 text-sm text-gray-500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p> */}
                   </div>
                 </div>
               </div>
@@ -62,17 +68,17 @@ const About = ({ data }) => {
                 >
                   <div className="flex items-center justify-start p-3">
                     <FeatherIcon
-                      icon="lock"
+                      icon="file-text"
                       className="h-10 w-10 text-primary"
                     />
-                    <h3 className="ml-4 text-xl text-white">Free Shipping</h3>
+                    <h3 className="ml-4 text-xl text-white">Data Privacy</h3>
                   </div>
                   <div className="ml-4">
-                    <p className="mt-1 text-sm text-gray-500">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
+                    {/* <p className="mt-1 text-sm text-gray-500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p> */}
                   </div>
                 </div>
               </div>
@@ -83,17 +89,19 @@ const About = ({ data }) => {
                 >
                   <div className="flex items-center justify-start p-3">
                     <FeatherIcon
-                      icon="lock"
+                      icon="save"
                       className="h-10 w-10 text-primary"
                     />
-                    <h3 className="ml-4 text-xl text-white">Free Shipping</h3>
+                    <h3 className="ml-4 text-xl text-white">
+                      Industry Certified
+                    </h3>
                   </div>
                   <div className="ml-4">
-                    <p className="mt-1 text-sm text-gray-500">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
+                    {/* <p className="mt-1 text-sm text-gray-500">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p> */}
                   </div>
                 </div>
               </div>
@@ -215,7 +223,7 @@ const About = ({ data }) => {
           </div>
         </div> */}
       </section>
-      <Cta />
+      {/* <Cta /> */}
     </>
   );
 };

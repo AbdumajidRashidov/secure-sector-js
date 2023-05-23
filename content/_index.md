@@ -1,6 +1,6 @@
 ---
 banner:
-  title: "Professional Security With Reliable Service"
+  title: "Secure Your Data with us: Your Trusted Data Protection Solution"
   image: /images/banner-app.png
   link:
     label: Learn more
