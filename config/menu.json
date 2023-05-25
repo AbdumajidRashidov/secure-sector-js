@@ -17,10 +17,6 @@
       "url": "/projects"
     },
     {
-      "name": "Blog",
-      "url": "/posts"
-    },
-    {
       "name": "Contact",
       "url": "/contact"
     }
@@ -41,10 +37,6 @@
     {
       "name": "Projects",
       "url": "/projects"
-    },
-    {
-      "name": "Blog",
-      "url": "/posts"
     },
     {
       "name": "Contact",

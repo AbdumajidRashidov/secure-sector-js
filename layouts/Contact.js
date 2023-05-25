@@ -4,8 +4,8 @@ import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
 
 const Contact = ({ data }) => {
-  const { frontmatter } = data;
-  const { title } = frontmatter;
+  // const { frontmatter } = data;
+  // const { title } = frontmatter;
 
   return (
     <section className="section">

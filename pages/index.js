@@ -17,6 +17,7 @@ import imgUrl from "../public/images/blog/01.jpg";
 import kids from "../public/images/kids.png";
 import staff from "../public/images/staff.png";
 import dlp from "../public/images/dlp.jpeg";
+import Contact from "@layouts/Contact";
 
 const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
   const paginationRef = useRef(null);
@@ -217,12 +218,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
       <section className="section">
         <div className="container-xl">
           <div className="row">
-            <div className="col-12 lg:col-12">
+            {/* <div className="col-12 lg:col-12">
               <h2 className="mb-12 text-center text-white">
                 Trusted Over <span style={{ color: "#0EC9AC" }}>2300 +</span>{" "}
                 Companies in the World
               </h2>
-            </div>
+            </div> */}
             <div className="row py-5">
               <div className="animate from-right col-12">
                 <Swiper
@@ -239,7 +240,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                 >
                   {brands.map((brand, index) => (
                     <SwiperSlide
-                      className=" h-20 cursor-pointer px-6 py-6 grayscale  transition hover:grayscale-0 lg:px-10"
+                      className=" h-40 cursor-pointer px-6 py-6 grayscale  transition hover:grayscale-0 lg:px-10"
                       key={"brand-" + index}
                     >
                       <div className="relative h-full">
@@ -578,7 +579,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           </div>
         </section>
       </section>
-      <section className="section">
+      {/* <section className="section">
         <div className="container-xl">
           <div className="row">
             <div className="col-12">
@@ -689,7 +690,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <Contact />
     </Base>
   );
 };

@@ -8,15 +8,11 @@ banner:
 
 ##brands
 brands:
-  - /images/brands/01-colored.png
-  - /images/brands/02-colored.png
-  - /images/brands/03-colored.png
-  - /images/brands/04-colored.png
-  - /images/brands/05-colored.png
-  - /images/brands/06-colored.png
-  - /images/brands/04-colored.png
-  - /images/brands/05-colored.png
-  - /images/brands/06-colored.png
+  - /images/brands/1.png
+  - /images/brands/2.png
+  - /images/brands/3.png
+  - /images/brands/4.png
+  - /images/brands/5.png
 
 #features
 features:
