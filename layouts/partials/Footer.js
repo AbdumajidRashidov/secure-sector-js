@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="">
       <div className="container">
         <div className="row flex items-center justify-between py-12">
-          <div className="animate md:col-6 lg:col-3">
+          <div className=" md:col-6 lg:col-3">
             <Logo />
           </div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="animate mt-8 md:col-6 lg:col-4 flex justify-end lg:mt-0">
+          <div className="animate mt-8 flex justify-end md:col-6 lg:col-4 lg:mt-0">
             <div className="mt-5">
               <Social source={social} className="social-icons" />
             </div>

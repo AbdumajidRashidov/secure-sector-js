@@ -261,7 +261,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           </div>
         </div>
       </section>
-      <section className="section">
+      {/* <section className="section">
         <div className="container-xl">
           <div
             className="bg-theme_lighter rounded-2xl p-10"
@@ -299,7 +299,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="section">
         <div className="container-xl">
           <div className="row">

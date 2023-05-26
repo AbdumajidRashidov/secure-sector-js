@@ -108,7 +108,7 @@ const About = ({ data }) => {
             </div>
           </div>
         </div>
-        <div>
+        {/* <div>
           <div className="container-xl">
             <div
               className="bg-theme_lighter rounded-2xl p-10"
@@ -158,10 +158,10 @@ const About = ({ data }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Members */}
-        <div className="section container">
+        {/* <div className="section container">
           <div className="animate text-center">
             <p className="mb-5 text-2xl text-primary">Our Team</p>
             <h2 className="mb-10 text-white">Meet With Our Expert</h2>
@@ -188,7 +188,7 @@ const About = ({ data }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Office */}
         {/* <div className="section container">
