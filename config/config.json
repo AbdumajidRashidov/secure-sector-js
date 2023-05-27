@@ -17,7 +17,7 @@
 
   "params": {
     "tag_manager_id": "",
-    "contact_form_action": "#",
+    "contact_form_action": "mailto:info@securesector.uz ",
     "footer_content": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
     "copyright": "Copyright © 2023. All rights reserved"
   },

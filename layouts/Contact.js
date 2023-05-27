@@ -1,11 +1,40 @@
-import config from "@config/config.json";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { configEmailJS } from "../config";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
 
 const Contact = ({ data }) => {
   // const { frontmatter } = data;
   // const { title } = frontmatter;
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+    console.log(form.current.reset);
+    emailjs
+      .sendForm(
+        configEmailJS.SERVICE_ID,
+        configEmailJS.TEMPLATE_ID,
+        form.current,
+        configEmailJS.API_KEY
+      )
+      .then(
+        (result) => {
+          // show the user a success message
+          form.current.reset();
+          if (result.status) {
+            alert("Xabaringiz muvaffaqiyatli yuborildi.)");
+          }
+        },
+        (error) => {
+          // show the user an error
+          alert("error");
+        }
+      );
+  };
 
   return (
     <section className="section">
@@ -14,11 +43,11 @@ const Contact = ({ data }) => {
         <div className="section row  justify-center">
           <div className="animate lg:col-6">
             <div className="mb-10">
-              <h5 class="mb-5 text-primary">Contact Us</h5>
+              <h5 className="mb-5 text-primary">Contact Us</h5>
 
-              <h3 class="mb-5 text-white">Get In Touch</h3>
+              <h3 className="mb-5 text-white">Get In Touch</h3>
 
-              {/* <div class="text-gray-500">
+              {/* <div className="text-gray-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua Ut enim ad minim veniam, quis nostrud exercitation{" "}
@@ -106,16 +135,18 @@ const Contact = ({ data }) => {
                 width="100%"
                 height="500"
                 style={{ border: 0 }}
-                allowfullscreen=""
+                // allowfullscreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                // referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
           <div className="animate lg:col-6">
             <form
-              method="POST"
-              action={config.params.contact_form_action}
+              // method="POST"
+              ref={form}
+              onSubmit={sendEmail}
+              // action={config.params.contact_form_action}
               className="contact-form rounded-xl p-6 shadow-[0_4px_25px_rgba(0,0,0,0.05)]"
             >
               <h2 className="h4 mb-6">Send A Message</h2>
@@ -170,7 +201,12 @@ const Contact = ({ data }) => {
                 >
                   Message
                 </label>
-                <textarea className="form-textarea w-full" rows="6" />
+                <textarea
+                  id="message"
+                  name="message"
+                  className="form-textarea w-full"
+                  rows="6"
+                />
               </div>
               <button className="btn btn-primary block w-full">
                 Submit Now

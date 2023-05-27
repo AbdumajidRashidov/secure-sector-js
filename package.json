@@ -11,7 +11,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "disqus-react": "^1.1.5",
+    "emailjs": "^4.0.2",
     "feather-icons-react": "^0.6.2",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
