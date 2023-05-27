@@ -17,7 +17,7 @@ const Footer = () => {
             <Logo />
           </div>
 
-          <div className="animate mt-8 md:col-6 lg:col-5 lg:mt-0">
+          <div className=" mt-8 md:col-6 lg:col-5 lg:mt-0">
             <ul className="mt-5 flex items-center justify-between leading-10">
               {menu.footer.map((menu) => (
                 <li key={menu.name} className="mx-2">
@@ -31,7 +31,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="animate mt-8 flex justify-end md:col-6 lg:col-4 lg:mt-0">
+          <div className=" mt-8 flex justify-end md:col-6 lg:col-4 lg:mt-0">
             <div className="mt-5">
               <Social source={social} className="social-icons" />
             </div>

@@ -101,6 +101,15 @@ const Contact = ({ data }) => {
                   </div>
                 </div>
               </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.9410415362195!2d69.26120797598983!3d41.33189539943541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b7ec64d4dbd%3A0x6a26177af9d218c3!2sC-Space%20Labzak!5e0!3m2!1sru!2s!4v1684857904546!5m2!1sru!2s"
+                width="100%"
+                height="500"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div className="animate lg:col-6">
@@ -168,7 +177,7 @@ const Contact = ({ data }) => {
               </button>
             </form>
           </div>
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.9410415362195!2d69.26120797598983!3d41.33189539943541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b7ec64d4dbd%3A0x6a26177af9d218c3!2sC-Space%20Labzak!5e0!3m2!1sru!2s!4v1684857904546!5m2!1sru!2s"
               width="100%"
@@ -178,7 +187,7 @@ const Contact = ({ data }) => {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
