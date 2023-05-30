@@ -2,8 +2,6 @@ import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { configEmailJS } from "../config";
-import Banner from "./components/Banner";
-import ImageFallback from "./components/ImageFallback";
 
 const Contact = ({ data }) => {
   // const { frontmatter } = data;

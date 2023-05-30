@@ -16,7 +16,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import imgUrl from "../public/images/blog/01.jpg";
 import kids from "../public/images/kids.png";
 import staff from "../public/images/staff.png";
-import dlp from "../public/images/dlp.jpeg";
+import dlp from "../public/images/dlp.png";
 import Contact from "@layouts/Contact";
 
 const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
@@ -504,7 +504,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   className="mx-auto rounded-2xl"
                   src={dlp}
                   width={575}
-                  height={511}
+                  height={411}
                   alt="primary speciality"
                 />
               </div>
