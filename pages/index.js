@@ -16,7 +16,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import imgUrl from "../public/images/blog/01.jpg";
 import kids from "../public/images/kids.png";
 import staff from "../public/images/staff.png";
-import dlp from "../public/images/dlp.png";
+import dlp from "../public/images/dlp-sm.png";
 import Contact from "@layouts/Contact";
 
 const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
@@ -499,12 +499,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   You can imporve your business with our products
                 </h3>
               </div>
-              <div className="animate mb-10 lg:col-6 lg:order-2">
+              <div className="animate mb-10 h-80 lg:col-6 lg:order-2">
                 <ImageFallback
-                  className="mx-auto rounded-2xl"
+                  className="mx-auto h-80 rounded-2xl object-cover"
                   src={dlp}
                   width={575}
-                  height={411}
+                  height={511}
                   alt="primary speciality"
                 />
               </div>
